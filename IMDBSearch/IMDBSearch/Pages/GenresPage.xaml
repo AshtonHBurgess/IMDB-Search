@@ -8,7 +8,35 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="GenresPage">
 
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBlock Text="Genres:" Style="{StaticResource Title}"></TextBlock>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <TextBlock Text="Search Titles: "></TextBlock>
+            <TextBox x:Name="textsearch" Width="200" FontSize="24" ></TextBox>
+            <Button x:Name="SearchButton" Content="Search" Click="SearchButton_Click"/>
+        </StackPanel>
+        <ListView x:Name="listTitlesSearchResults"
+                  ScrollViewer.CanContentScroll="False"
+                  ScrollViewer.VerticalScrollBarVisibility="Visible" Height="350">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                        <Expander Header="Titles">
+                            <ListView ItemsSource="{Binding Titles}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate DataType="local:Titles">
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding PtimaryTitle}"></TextBlock>
+                                            <TextBlock Text="{Binding StartYear}"></TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Expander>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackPanel>
 </Page>
