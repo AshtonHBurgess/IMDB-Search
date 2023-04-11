@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\App.xaml
-11407045341
+5181063405
 
-13895776156
+17-509027563
 226252443453
-MainWindow.xaml;
+MainWindow.xaml;Pages\ActorsPage.xaml;Pages\GenresPage.xaml;Pages\HomePage.xaml;Pages\RatingsPage.xaml;
 
-False
+True
 
