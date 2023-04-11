@@ -9,7 +9,7 @@
       Title="GenresPage">
 
     <StackPanel>
-        <TextBlock Text="Genres:" Style="{StaticResource Title}"></TextBlock>
+        <TextBlock Text="Genres:" Style="{StaticResource PageTitle}"></TextBlock>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
             <TextBlock Text="Search Titles: "></TextBlock>
             <TextBox x:Name="textsearch" Width="200" FontSize="24" ></TextBox>

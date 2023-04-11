@@ -140,3 +140,4 @@ C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj
 C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\GenresPage.baml
 C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\HomePage.baml
 C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\RatingsPage.baml
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\App.baml
