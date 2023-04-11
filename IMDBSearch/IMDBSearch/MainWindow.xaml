@@ -5,8 +5,68 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IMDBSearch"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="IMDB Database Search" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="home" UriSource="/Images/home.png" />
+            <BitmapImage x:Key="actor" UriSource="/Images/actor.png" />
+            <BitmapImage x:Key="genre" UriSource="/Images/genre.png" />
+            <BitmapImage x:Key="rating" UriSource="/Images/rating.png" />
+        </ResourceDictionary>
+    </Window.Resources>
 
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Pages">
+                <MenuItem Header="_Home" Click="HomeButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource home}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem Header="_View Actors" Click="ActorButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource actor}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem Header="_View Genres" Click="GenreButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource genre}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem Header="_View Ratings" Click="RatingButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource rating}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <ToolBar DockPanel.Dock="Left">
+            <StackPanel Orientation="Vertical" Width="50">
+                <Button x:Name="HomeButton" Click="HomeButton_Click" ToolTip="View Home Page">
+                    <Image Source="{StaticResource home}"/>
+                </Button>
+                <Button x:Name="ArtistButton" Click="ActorButton_Click" ToolTip="View Actors">
+                    <Image Source="{StaticResource actor}"/>
+                </Button>
+                <Button x:Name="AlbumButton" Click="GenreButton_Click" ToolTip="View Genress">
+                    <Image Source="{StaticResource genre}"/>
+                </Button>
+                <Button x:Name="TrackButton" Click="RatingButton_Click" ToolTip="View Ratings">
+                    <Image Source="{StaticResource rating}"/>
+                </Button>
+            </StackPanel>
+        </ToolBar>
+
+
+        <Frame x:Name="mainFrame" Width="auto" Height="auto" NavigationUIVisibility="Hidden">
+
+        </Frame>
+    </DockPanel>
 </Window>
