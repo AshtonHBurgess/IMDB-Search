@@ -6,7 +6,67 @@
         xmlns:local="clr-namespace:IMDBSearch"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Window.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="home" UriSource="/Images/home.png" />
+            <BitmapImage x:Key="artist" UriSource="/Images/artist.png" />
+            <BitmapImage x:Key="album" UriSource="/Images/albumImg.png" />
+            <BitmapImage x:Key="track" UriSource="/Images/track.png" />
+        </ResourceDictionary>
+    </Window.Resources>
 
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Pages">
+                <MenuItem Header="_Home" Click="HomeButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource home}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem Header="_ViewAlbums" Click="AlbumButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource album}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem Header="_ViewTracks" Click="TrackButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource track}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem Header="_ViewArtists" Click="ArtistButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource artist}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <ToolBar DockPanel.Dock="Left">
+            <StackPanel Orientation="Vertical" Width="50">
+                <Button x:Name="HomeButton" Click="HomeButton_Click" ToolTip="View Home Page">
+                    <Image Source="{StaticResource home}"/>
+                </Button>
+                <Button x:Name="ArtistButton" Click="ArtistButton_Click" ToolTip="View All Artists">
+                    <Image Source="{StaticResource artist}"/>
+                </Button>
+                <Button x:Name="AlbumButton" Click="AlbumButton_Click" ToolTip="View All Albums">
+                    <Image Source="{StaticResource album}"/>
+                </Button>
+                <Button x:Name="TrackButton" Click="TrackButton_Click" ToolTip="View All Tracks">
+                    <Image Source="{StaticResource track}"/>
+                </Button>
+            </StackPanel>
+        </ToolBar>
+
+
+        <Frame x:Name="mainFrame" Width="auto" Height="auto" NavigationUIVisibility="Hidden">
+
+        </Frame>
+    </DockPanel>
 </Window>
