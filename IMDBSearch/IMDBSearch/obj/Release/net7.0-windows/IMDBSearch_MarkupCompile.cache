@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\w0457048\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\
+C:\Users\w0457048\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Release\net7.0-windows\
 IMDBSearch
 none
 false
-TRACE;DEBUG;NET;NET7_0;NETCOREAPP
+TRACE;RELEASE;NET;NET7_0;NETCOREAPP
 C:\Users\w0457048\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\App.xaml
 5181063405
 
