@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\IMDBSearch",
+    "\\IMDBSearch\\IMDBSearch"
   ],
+  "SelectedNode": "\\IMDBSearch\\IMDBSearch\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }
