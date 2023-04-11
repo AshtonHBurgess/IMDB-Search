@@ -3463,24 +3463,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\w0464750\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\nilan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\w0464750\\Documents\\GitHub\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
+      "projectUniqueName": "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
       "projectName": "IMDBSearch",
-      "projectPath": "C:\\Users\\w0464750\\Documents\\GitHub\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
-      "packagesPath": "C:\\Users\\w0464750\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\w0464750\\Documents\\GitHub\\IMDB-Search\\IMDBSearch\\IMDBSearch\\obj\\",
+      "projectPath": "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
+      "packagesPath": "C:\\Users\\nilan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\w0464750\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\nilan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3488,7 +3483,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3547,7 +3541,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

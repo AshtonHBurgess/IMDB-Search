@@ -131,3 +131,12 @@ C:\Users\w0464750\Documents\GitHub\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\n
 C:\Users\w0464750\Documents\GitHub\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\IMDBSearch.csproj.CopyComplete
 C:\Users\w0464750\Documents\GitHub\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\IMDBSearch.genruntimeconfig.cache
 C:\Users\w0464750\Documents\GitHub\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\ref\IMDBSearch.dll
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\bin\Debug\net7.0-windows\IMDBSearch.dll.config
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\ActorsPage.g.cs
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\GenresPage.g.cs
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\HomePage.g.cs
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\RatingsPage.g.cs
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\ActorsPage.baml
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\GenresPage.baml
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\HomePage.baml
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\RatingsPage.baml
