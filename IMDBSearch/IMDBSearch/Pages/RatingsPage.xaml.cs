@@ -39,9 +39,11 @@ namespace IMDBSearch.Pages
             _context.Titles.Load();
             ratingsListView.DataContext = _context;
             //ratingsViewSource.Source = _context.Titles.Local.ToObservableCollection();
-            var query = 
+            var query =
                 from title in _context.Titles
-                where title != null && title.Rating != null
+                where title != null && title.Rating != null && title.Rating.AverageRating != null
+                //group title by title.PrimaryTitle into newGroup
+                orderby title.Rating.AverageRating descending
                 select title;
             ratingsViewSource.Source = query.ToList();
             ratingsListView.Items.Refresh();
@@ -51,6 +53,17 @@ namespace IMDBSearch.Pages
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
             string searchTerm = textSearch.Text;
+            _context.Titles.Load();
+            ratingsListView.DataContext = _context;
+            //ratingsViewSource.Source = _context.Titles.Local.ToObservableCollection();
+            var query =
+                from title in _context.Titles
+                where title != null && title.Rating != null && title.PrimaryTitle != null && title.Rating.AverageRating != null && title.PrimaryTitle.Contains(searchTerm)
+                orderby title.Rating.AverageRating descending
+                select title;
+            //query = query.Contains(searchTerm);
+            ratingsViewSource.Source = query.ToList();
+            ratingsListView.Items.Refresh();
 
         }
     }

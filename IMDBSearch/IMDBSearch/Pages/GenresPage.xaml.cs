@@ -24,6 +24,7 @@ namespace IMDBSearch.Pages
     public partial class GenresPage : Page
     {
         ImdbProjectContext _context = new ImdbProjectContext();
+        private CollectionViewSource genresViewSource;
 
         public GenresPage()
         {
@@ -31,22 +32,28 @@ namespace IMDBSearch.Pages
             _context.Genres.Load();
             _context.Titles.Load();
             _context.TitleAliases.Load();
+            genresViewSource = (CollectionViewSource)FindResource(nameof(genresViewSource));
         }
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             string searchTerm = textsearch.Text;
-
+            listTitlesSearchResults.DataContext = _context;
+            _context.Titles.Load();
             var query =
                 from genre in _context.Genres
-                where genre.Titles.Any( title => title.TitleAliases.Any(ta => ta.Title.Contains(searchTerm)))
+                //where genre.Titles.Any(title => title.TitleAliases.Any(ta => ta.Title.Contains(searchTerm)))
                 select genre;
-
-            listTitlesSearchResults.Items.Clear();
-            foreach (var genre in query)
+            
+            foreach ( var item in query )
             {
-                listTitlesSearchResults.Items.Add(genre);
+                foreach (var title in item.Titles )
+                {
+                    Console.WriteLine( title );
+                }
             }
+
+            genresViewSource.Source = query.ToList();
         }
     }
 }

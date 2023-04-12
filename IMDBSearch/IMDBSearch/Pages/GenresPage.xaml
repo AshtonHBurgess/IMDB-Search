@@ -8,6 +8,10 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="GenresPage">
 
+    <Page.Resources>
+        <CollectionViewSource x:Key="genresViewSource"></CollectionViewSource>
+    </Page.Resources>
+    
     <StackPanel>
         <TextBlock Text="Genres:" Style="{StaticResource PageTitle}"></TextBlock>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
@@ -16,19 +20,23 @@
             <Button x:Name="SearchButton" Content="Search" Click="SearchButton_Click"/>
         </StackPanel>
         <ListView x:Name="listTitlesSearchResults"
+                  ItemsSource="{Binding Source={StaticResource genresViewSource}}"
                   ScrollViewer.CanContentScroll="False"
-                  ScrollViewer.VerticalScrollBarVisibility="Visible" Height="350">
+                  ScrollViewer.VerticalScrollBarVisibility="Visible" Height="300">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel>
+                    <StackPanel Orientation="Horizontal">
                         <TextBlock Text="{Binding Name}"></TextBlock>
                         <Expander Header="Titles">
-                            <ListView ItemsSource="{Binding Titles}">
+                            <ListView ItemsSource="{Binding Titles}"
+                                ScrollViewer.CanContentScroll="False"
+                                ScrollViewer.VerticalScrollBarVisibility="Visible">
                                 <ListView.ItemTemplate>
                                     <DataTemplate DataType="local:Titles">
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding PtimaryTitle}"></TextBlock>
+                                            <TextBlock Text="{Binding PrimaryTitle}"></TextBlock>
                                             <TextBlock Text="{Binding StartYear}"></TextBlock>
+                                            <TextBlock Text="{Binding RuntimeMinutes}"></TextBlock>
                                         </StackPanel>
                                     </DataTemplate>
                                 </ListView.ItemTemplate>

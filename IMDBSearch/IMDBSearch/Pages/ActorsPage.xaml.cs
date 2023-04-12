@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IMDBSearch.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,26 @@ namespace IMDBSearch.Pages
     /// </summary>
     public partial class ActorsPage : Page
     {
+        private ImdbProjectContext _context = new ImdbProjectContext();
+        //data context
+        private CollectionViewSource actorViewSource;
+
         public ActorsPage()
         {
             InitializeComponent();
+            actorViewSource = (CollectionViewSource)FindResource(nameof(actorViewSource));
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            var query = _context.Names.Where(actor => actor.PrimaryName.Contains(textSearch.Text)).ToList();
+
+            listActorSearchResults.ItemsSource = query;
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

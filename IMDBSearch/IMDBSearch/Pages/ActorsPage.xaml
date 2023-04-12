@@ -6,9 +6,43 @@
       xmlns:local="clr-namespace:IMDBSearch.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ActorsPage">
+      Title="Actors Page" Loaded="Page_Loaded">
 
-    <Grid>
-        
-    </Grid>
+ 
+    <Page.Resources>
+        <CollectionViewSource x:Key="actorViewSource"></CollectionViewSource>
+    </Page.Resources>
+
+    <StackPanel>
+        <TextBlock  Text="IMBD Actors"></TextBlock>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Search Actors:"/>
+            <TextBox x:Name="textSearch" Width="300" FontSize="24"/>
+            <Button x:Name="btnSearch"
+                    Content="Search"
+                    Click="btnSearch_Click"/>
+        </StackPanel>
+        <ListView  ItemsSource="{Binding Source={StaticResource actorViewSource}}"
+                   ScrollViewer.CanContentScroll="True"
+                   ScrollViewer.VerticalScrollBarVisibility="Visible"
+                   Width="750"
+                   Height="400"
+                    x:Name="listActorSearchResults"
+                   >
+            
+            
+            
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ActorId}"></GridViewColumn>
+                    <GridViewColumn Header="Actor Name" DisplayMemberBinding="{Binding PrimaryName}"></GridViewColumn>
+                 
+                </GridView>
+            </ListView.View>
+            
+            
+        </ListView>
+    </StackPanel>
+
+
 </Page>

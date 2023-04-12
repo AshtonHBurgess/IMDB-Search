@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:IMDBSearch.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="RatingsPage">
+      Title="RatingsPage" Loaded="Page_Loaded">
 
     <Page.Resources>
         <BitmapImage x:Key="search" UriSource="/Images/search.png"/>
@@ -16,13 +16,13 @@
         <TextBlock Text="Ratings list" Style="{StaticResource PageTitles}" TextAlignment="Center"/>
         <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
             <TextBlock Text="Title" Style="{StaticResource PageSpecial}" Margin="5,5,15,0"/>
-            <Label Content="Search:" Style="{StaticResource PageLabel}" Margin="276,1,5,0"/>
+            <Label Content="Search:" Style="{StaticResource PageLabel}" Margin="150,1,5,0"/>
             <TextBox x:Name="textSearch" Width="300" FontSize="21" Height="31" Margin="0,5,0,0"/>
             <Button x:Name="btnSearch" ToolTip="Search for Titles" Click="btnSearch_Click" Margin="7,5,0,0">
                 <Image Source="{StaticResource search}" Height="30" Width="50"/>
             </Button>
         </StackPanel>
-        <ListView Name="ratingsListView" ItemsSource="{Binding Source={StaticResource ratingsViewSource}}" MaxHeight="450">
+        <ListView Name="ratingsListView" ItemsSource="{Binding Source={StaticResource ratingsViewSource}}" MaxHeight="350">
             <ListView.ItemTemplate>
                 <DataTemplate>
                         <TextBlock Text="{Binding PrimaryTitle}"/>
