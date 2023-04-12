@@ -1,4 +1,4 @@
-﻿<Page x:Class="IMDBSearch.Pages.HomePage"
+<Page x:Class="IMDBSearch.Pages.HomePage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,9 +6,17 @@
       xmlns:local="clr-namespace:IMDBSearch.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="HomePage">
+      Title="HomePage"
+      Background="Black">
 
-    <Grid>
-        
-    </Grid>
+    <Page.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="logo" UriSource="/Images/IMDb.png" />
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Image Source="{StaticResource logo}" MaxWidth="400px" MinWidth="200px"/>
+        <TextBlock Text="Please Use The Side Menu To Navigate" HorizontalAlignment="Center" Foreground="#f5c518" FontWeight="Bold" FontSize="18px" FontFamily="David"></TextBlock>
+    </StackPanel>
 </Page>
