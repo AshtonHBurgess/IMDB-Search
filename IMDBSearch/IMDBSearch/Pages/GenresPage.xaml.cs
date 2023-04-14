@@ -24,36 +24,56 @@ namespace IMDBSearch.Pages
     public partial class GenresPage : Page
     {
         ImdbProjectContext _context = new ImdbProjectContext();
-        private CollectionViewSource genresViewSource;
-
+        string selectedgenre;
         public GenresPage()
         {
             InitializeComponent();
             _context.Genres.Load();
             _context.Titles.Load();
             _context.TitleAliases.Load();
-            genresViewSource = (CollectionViewSource)FindResource(nameof(genresViewSource));
-        }
+            var genrequery =
+                from genre in _context.Genres
+                orderby genre.Name
+                select genre;
 
-        private void SearchButton_Click(object sender, RoutedEventArgs e)
+            foreach (var genre in genrequery)
+            {
+                GenreList.Items.Add(genre.Name);
+            }
+            GenreList.SelectedIndex = 0;
+        }
+        private void Search()
         {
             string searchTerm = textsearch.Text;
-            listTitlesSearchResults.DataContext = _context;
-            _context.Titles.Load();
-            var query =
-                from genre in _context.Genres
-                //where genre.Titles.Any(title => title.TitleAliases.Any(ta => ta.Title.Contains(searchTerm)))
-                select genre;
-            
-            foreach ( var item in query )
-            {
-                foreach (var title in item.Titles )
-                {
-                    Console.WriteLine( title );
-                }
-            }
 
-            genresViewSource.Source = query.ToList();
+            var query =
+                from title in _context.Titles
+                where title.TitleAliases.Any(ta => ta.Title.Contains(searchTerm)) && title.Genres.Any(g => g.Name.Contains(selectedgenre ?? string.Empty))
+                orderby title.PrimaryTitle
+                select title;
+
+            listTitlesSearchResults.Items.Clear();
+            foreach (var title in query.Take(500))
+            {
+                listTitlesSearchResults.Items.Add(title);
+            }
+        }
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            Search();
+        }
+
+        private void GenreList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (GenreList.SelectedItem == "All")
+            {
+                selectedgenre = "";
+            }
+            else
+            {
+                selectedgenre = GenreList.SelectedItem as string;
+            }
+            Search();
         }
     }
 }

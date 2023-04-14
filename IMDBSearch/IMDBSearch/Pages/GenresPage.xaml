@@ -9,39 +9,31 @@
       Title="GenresPage">
 
     <Page.Resources>
-        <CollectionViewSource x:Key="genresViewSource"></CollectionViewSource>
+        <BitmapImage x:Key="search" UriSource="/Images/search.png" />
     </Page.Resources>
-    
+
     <StackPanel>
-        <TextBlock Text="Genres:" Style="{StaticResource PageTitle}"></TextBlock>
+        <TextBlock x:Name="textBlock" Text="Genres:" Style="{StaticResource PageTitle}"></TextBlock>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <TextBlock Text="Search Titles: "></TextBlock>
-            <TextBox x:Name="textsearch" Width="200" FontSize="24" ></TextBox>
-            <Button x:Name="SearchButton" Content="Search" Click="SearchButton_Click"/>
+            <TextBlock Text="Search Titles: " Style="{StaticResource PageSpecial}"></TextBlock>
+            <TextBox x:Name="textsearch" Width="200" FontSize="24"></TextBox>
+            <ComboBox x:Name="GenreList" SelectionChanged="GenreList_SelectionChanged" Width="150" MaxDropDownHeight="300">
+                <ComboBoxItem>All</ComboBoxItem>
+                <Separator />
+            </ComboBox>
+            <Button x:Name="SearchButton" Click="SearchButton_Click">
+                <Image Source="{StaticResource search}" Height="30"></Image>
+            </Button>
         </StackPanel>
         <ListView x:Name="listTitlesSearchResults"
-                  ItemsSource="{Binding Source={StaticResource genresViewSource}}"
                   ScrollViewer.CanContentScroll="False"
                   ScrollViewer.VerticalScrollBarVisibility="Visible" Height="300">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Name}"></TextBlock>
-                        <Expander Header="Titles">
-                            <ListView ItemsSource="{Binding Titles}"
-                                ScrollViewer.CanContentScroll="False"
-                                ScrollViewer.VerticalScrollBarVisibility="Visible">
-                                <ListView.ItemTemplate>
-                                    <DataTemplate DataType="local:Titles">
-                                        <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding PrimaryTitle}"></TextBlock>
-                                            <TextBlock Text="{Binding StartYear}"></TextBlock>
-                                            <TextBlock Text="{Binding RuntimeMinutes}"></TextBlock>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                            </ListView>
-                        </Expander>
+                        <TextBlock Text="{Binding PrimaryTitle}"></TextBlock>
+                        <TextBlock Text="{Binding StartYear}"></TextBlock>
+                        <TextBlock Text="{Binding RuntimeMinutes}"></TextBlock>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
