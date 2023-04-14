@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\IMDBSearch",
-    "\\IMDBSearch\\IMDBSearch"
+    "\\IMDBSearch\\IMDBSearch",
+    "\\IMDBSearch\\IMDBSearch\\Models"
   ],
-  "SelectedNode": "\\IMDBSearch\\IMDBSearch\\MainWindow.xaml",
+  "SelectedNode": "\\IMDBSearch\\IMDBSearch\\Models\\Title.cs",
   "PreviewInSolutionExplorer": false
 }

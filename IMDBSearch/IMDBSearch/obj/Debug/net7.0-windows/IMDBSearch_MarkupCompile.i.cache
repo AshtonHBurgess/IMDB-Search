@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\
+C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\
 IMDBSearch
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\App.xaml
+C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\App.xaml
 5181063405
 
 18-655411266
-226252443453
+22688620068
 MainWindow.xaml;Pages\ActorsPage.xaml;Pages\GenresPage.xaml;Pages\HomePage.xaml;Pages\RatingsPage.xaml;
 
 True
