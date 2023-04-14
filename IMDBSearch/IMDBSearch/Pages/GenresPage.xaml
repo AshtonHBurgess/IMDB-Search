@@ -8,15 +8,22 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="GenresPage">
 
+    <Page.Resources>
+        <BitmapImage x:Key="search" UriSource="/Images/search.png" />
+    </Page.Resources>
+
     <StackPanel>
-        <TextBlock Text="Genres:" Style="{StaticResource PageTitle}"></TextBlock>
+        <TextBlock x:Name="textBlock" Text="Genres:" Style="{StaticResource PageTitle}"></TextBlock>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <TextBlock Text="Search Titles: "></TextBlock>
-            <TextBox x:Name="textsearch" Width="200" FontSize="24" ></TextBox>
-            <ComboBox x:Name="GenreList" SelectionChanged="GenreList_SelectionChanged">
+            <TextBlock Text="Search Titles: " Style="{StaticResource PageSpecial}"></TextBlock>
+            <TextBox x:Name="textsearch" Width="200" FontSize="24"></TextBox>
+            <ComboBox x:Name="GenreList" SelectionChanged="GenreList_SelectionChanged" Width="150" MaxDropDownHeight="300">
                 <ComboBoxItem>All</ComboBoxItem>
+                <Separator />
             </ComboBox>
-            <Button x:Name="SearchButton" Content="Search" Click="SearchButton_Click"/>
+            <Button x:Name="SearchButton" Click="SearchButton_Click">
+                <Image Source="{StaticResource search}" Height="30"></Image>
+            </Button>
         </StackPanel>
         <ListView x:Name="listTitlesSearchResults"
                   ScrollViewer.CanContentScroll="False"

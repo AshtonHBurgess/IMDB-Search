@@ -41,13 +41,11 @@ namespace IMDBSearch.Pages
                 GenreList.Items.Add(genre.Name);
             }
             GenreList.SelectedIndex = 0;
-            selectedgenre = "";
         }
-
-        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        private void Search()
         {
             string searchTerm = textsearch.Text;
-            
+
             var query =
                 from title in _context.Titles
                 where title.TitleAliases.Any(ta => ta.Title.Contains(searchTerm)) && title.Genres.Any(g => g.Name.Contains(selectedgenre ?? string.Empty))
@@ -60,6 +58,10 @@ namespace IMDBSearch.Pages
                 listTitlesSearchResults.Items.Add(title);
             }
         }
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            Search();
+        }
 
         private void GenreList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -71,6 +73,7 @@ namespace IMDBSearch.Pages
             {
                 selectedgenre = GenreList.SelectedItem as string;
             }
+            Search();
         }
     }
 }

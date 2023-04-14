@@ -3,8 +3,9 @@
     "",
     "\\IMDBSearch",
     "\\IMDBSearch\\IMDBSearch",
-    "\\IMDBSearch\\IMDBSearch\\Models"
+    "\\IMDBSearch\\IMDBSearch\\Models",
+    "\\IMDBSearch\\IMDBSearch\\Pages"
   ],
-  "SelectedNode": "\\IMDBSearch\\IMDBSearch\\Models\\Title.cs",
+  "SelectedNode": "\\IMDBSearch\\IMDBSearch\\Pages\\GenresPage.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

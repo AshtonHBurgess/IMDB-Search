@@ -4,17 +4,11 @@
              xmlns:local="clr-namespace:IMDBSearch"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <Style x:Key="PageTitles" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="24"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-        </Style>
-        <Style x:Key="PageRegular" TargetType="TextBlock">
+        <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="18"/>
-            <Setter Property="FontWeight" Value="DemiBold"/>
         </Style>
         <Style x:Key="PageSpecial" TargetType="TextBlock">
             <Setter Property="FontSize" Value="21"/>
-            <Setter Property="FontWeight" Value="Heavy"/>
         </Style>
         <Style x:Key="PageLabel" TargetType="Label">
             <Setter Property="FontSize" Value="21"/>
