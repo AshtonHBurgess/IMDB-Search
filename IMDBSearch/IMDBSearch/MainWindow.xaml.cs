@@ -18,7 +18,7 @@ namespace IMDBSearch
     public partial class MainWindow : Window
     {
         private Page homePage;
-        private Page actorPage;
+        private Page episodepage;
         private Page genrePage;
         private Page ratingPage;
 
@@ -26,7 +26,7 @@ namespace IMDBSearch
         {
             InitializeComponent();
             homePage = new Pages.HomePage();
-            actorPage = new Pages.ActorsPage();
+            episodepage = new Pages.EpisodesPage();
             genrePage = new Pages.GenresPage();
             ratingPage = new Pages.RatingsPage();
         }
@@ -42,7 +42,7 @@ namespace IMDBSearch
 
         private void ActorButton_Click(object sender, RoutedEventArgs e)
         {
-            mainFrame.NavigationService.Navigate(actorPage);
+            mainFrame.NavigationService.Navigate(episodepage);
         }
 
         private void GenreButton_Click(object sender, RoutedEventArgs e)

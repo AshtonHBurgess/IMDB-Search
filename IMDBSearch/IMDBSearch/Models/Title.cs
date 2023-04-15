@@ -18,5 +18,20 @@ namespace IMDBSearch.Models
         //    }
         //}
 
+        public string TitleDetails {
+            get
+            {
+                string a = "";
+                if (StartYear != null)
+                {
+                    a += string.Format(" Release Year: {0}", StartYear);
+                }
+                if (RuntimeMinutes != null)
+                {
+                    a += string.Format(" Runtime (Minutes): {0}", RuntimeMinutes);
+                }
+                return a;
+            }
+        }
     }
 }
