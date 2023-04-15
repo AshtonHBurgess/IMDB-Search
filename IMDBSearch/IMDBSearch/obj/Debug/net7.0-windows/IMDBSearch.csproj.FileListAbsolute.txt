@@ -143,7 +143,6 @@ C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj
 C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\App.baml
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\IMDBSearch.csproj.AssemblyReference.cache
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\MainWindow.g.cs
-C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\ActorsPage.g.cs
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\GenresPage.g.cs
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\HomePage.g.cs
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\RatingsPage.g.cs
@@ -201,7 +200,6 @@ C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\bin\D
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\App.baml
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\MainWindow.baml
-C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\ActorsPage.baml
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\GenresPage.baml
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\HomePage.baml
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\RatingsPage.baml
@@ -213,3 +211,9 @@ C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\D
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\IMDBSearch.csproj.CopyComplete
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\IMDBSearch.genruntimeconfig.cache
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\ref\IMDBSearch.dll
+C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\DirectorsPage.g.cs
+C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\DirectorsPage.baml
+C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\EpisodesPage.g.cs
+C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\EpisodesPage.baml
+C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\ActorsPage.g.cs
+C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\ActorsPage.baml

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\App.xaml
-5181063405
+7977110281
 
-18-655411266
+20-1567703777
 22688620068
-MainWindow.xaml;Pages\ActorsPage.xaml;Pages\GenresPage.xaml;Pages\HomePage.xaml;Pages\RatingsPage.xaml;
+MainWindow.xaml;Pages\ActorsPage.xaml;Pages\DirectorsPage.xaml;Pages\EpisodesPage.xaml;Pages\GenresPage.xaml;Pages\HomePage.xaml;Pages\RatingsPage.xaml;
 
-True
+False
 

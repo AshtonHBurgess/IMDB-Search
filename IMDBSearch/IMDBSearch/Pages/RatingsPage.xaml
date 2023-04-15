@@ -6,23 +6,24 @@
       xmlns:local="clr-namespace:IMDBSearch.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="RatingsPage" Loaded="Page_Loaded">
+      Title="RatingsPage">
 
     <Page.Resources>
         <BitmapImage x:Key="search" UriSource="/Images/search.png"/>
         <CollectionViewSource x:Key="ratingsViewSource"></CollectionViewSource>
     </Page.Resources>
     <StackPanel>
-        <TextBlock Text="Ratings list" Style="{StaticResource PageTitles}" TextAlignment="Center"/>
-        <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
-            <TextBlock Text="Title" Style="{StaticResource PageSpecial}" Margin="5,5,15,0"/>
-            <Label Content="Search:" Style="{StaticResource PageLabel}" Margin="150,1,5,0"/>
-            <TextBox x:Name="textSearch" Width="300" FontSize="21" Height="31" Margin="0,5,0,0"/>
-            <Button x:Name="btnSearch" ToolTip="Search for Titles" Click="btnSearch_Click" Margin="7,5,0,0">
-                <Image Source="{StaticResource search}" Height="30" Width="50"/>
+        <TextBlock Text="Title Ratings:" Style="{StaticResource PageTitle}"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <TextBlock Text="Search Titles: " Style="{StaticResource PageSpecial}"></TextBlock>
+            <TextBox x:Name="textsearch" Width="200" FontSize="24"></TextBox>
+            <Button x:Name="SearchButton" Click="SearchButton_Click">
+                <Image Source="{StaticResource search}" Height="30"></Image>
             </Button>
         </StackPanel>
-        <ListView Name="ratingsListView" ItemsSource="{Binding Source={StaticResource ratingsViewSource}}" MaxHeight="350">
+        <ListView Name="ratingsListView" ItemsSource="{Binding Source={StaticResource ratingsViewSource}}"
+                  ScrollViewer.CanContentScroll="False"
+                  ScrollViewer.VerticalScrollBarVisibility="Visible" MaxHeight="325">
             <ListView.ItemTemplate>
                 <DataTemplate>
                         <TextBlock Text="{Binding PrimaryTitle}"/>

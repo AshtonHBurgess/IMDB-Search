@@ -48,7 +48,7 @@ namespace IMDBSearch.Pages
 
             var query =
                 from title in _context.Titles
-                where title.TitleAliases.Any(ta => ta.Title.Contains(searchTerm)) && title.Genres.Any(g => g.Name.Contains(selectedgenre ?? string.Empty))
+                where (title.TitleAliases.Any(ta => ta.Title.Contains(searchTerm)) || title.PrimaryTitle.Contains(searchTerm)) && title.Genres.Any(g => g.Name.Contains(selectedgenre ?? string.Empty))
                 orderby title.PrimaryTitle
                 select title;
 

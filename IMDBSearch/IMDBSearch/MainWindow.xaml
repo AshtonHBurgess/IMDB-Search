@@ -55,7 +55,7 @@
                 <Button x:Name="ArtistButton" Click="ActorButton_Click" ToolTip="View Actors">
                     <Image Source="{StaticResource actor}"/>
                 </Button>
-                <Button x:Name="AlbumButton" Click="GenreButton_Click" ToolTip="View Genress">
+                <Button x:Name="AlbumButton" Click="GenreButton_Click" ToolTip="View Genres">
                     <Image Source="{StaticResource genre}"/>
                 </Button>
                 <Button x:Name="TrackButton" Click="RatingButton_Click" ToolTip="View Ratings">
