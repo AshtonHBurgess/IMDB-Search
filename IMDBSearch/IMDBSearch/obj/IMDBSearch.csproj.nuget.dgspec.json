@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj": {}
+    "C:\\Users\\asbur\\Source\\Repos\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj": {
+    "C:\\Users\\asbur\\Source\\Repos\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
+        "projectUniqueName": "C:\\Users\\asbur\\Source\\Repos\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
         "projectName": "IMDBSearch",
-        "projectPath": "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
-        "packagesPath": "C:\\Users\\nilan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\obj\\",
+        "projectPath": "C:\\Users\\asbur\\Source\\Repos\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
+        "packagesPath": "C:\\Users\\asbur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asbur\\Source\\Repos\\IMDB-Search\\IMDBSearch\\IMDBSearch\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nilan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asbur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,7 +84,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

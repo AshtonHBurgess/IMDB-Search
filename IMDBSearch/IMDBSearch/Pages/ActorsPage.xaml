@@ -29,20 +29,12 @@
                    Height="400"
                     x:Name="listActorSearchResults"
                    >
-            
-            
-            
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ActorId}"></GridViewColumn>
                     <GridViewColumn Header="Actor Name" DisplayMemberBinding="{Binding PrimaryName}"></GridViewColumn>
-                 
                 </GridView>
             </ListView.View>
-            
-            
         </ListView>
     </StackPanel>
-
-
 </Page>

@@ -22,7 +22,7 @@ namespace IMDBSearch.Pages
     {
         public HomePage()
         {
-            InitializeComponent();
+            InitializeComponent(); // Just initializes the page as no backend logic is required, only xaml
         }
     }
 }

@@ -19,24 +19,24 @@ using System.Windows.Shapes;
 
 namespace IMDBSearch.Pages
 {
-    /// <summary>
-    /// Interaction logic for EpisodesPage.xaml
-    /// </summary>
     public partial class EpisodesPage : Page
     {
         ImdbProjectContext _context = new ImdbProjectContext();
         public EpisodesPage()
         {
             InitializeComponent();
+            //preload all Names and Titles
             _context.Episodes.Load();
             _context.Titles.Load();
+            
+            //On page initalization display top 500 movies/shows
             Search();
         }
 
         private void Search()
         {
             string searchTerm = textsearch.Text;
-
+            //query, return top 500 Tvshows/Movies with the title containing your search, and all list all episodes for each Tvshow/Movie
             var query =
                 from episodes in _context.Episodes
                 where episodes.ParentTitle.PrimaryTitle.Contains(searchTerm)
@@ -48,6 +48,7 @@ namespace IMDBSearch.Pages
                     SeList = newGroup.ToList()
         };
 
+            //display each TvShow/Movie in List View
             listEpisodesSearchResults.Items.Clear();
             foreach (var title in query.Take(500))
             {

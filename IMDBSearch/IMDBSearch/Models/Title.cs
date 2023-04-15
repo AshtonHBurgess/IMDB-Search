@@ -33,10 +33,15 @@ namespace IMDBSearch.Models
         }
         public BitmapImage getRating
         {
+            
             get
             {
-                //load an image of 10 stars to a bitmap, then crop it depending on the rating, before converting it to a BitmapImage that can be displayed
-                Bitmap stars = new Bitmap(@"C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\Images\stars.png");
+                // load an image of 10 stars to a bitmap, then crop it depending on the rating, before converting it to a BitmapImage that can be displayed
+
+                // string fullPath = "C:\\Users\\asbur\\Source\\Repos\\IMDB-Search\\IMDBSearch\\IMDBSearch\\bin\\Debug\\net7.0-windows\\Images\\stars.png"
+
+               
+                Bitmap stars = new Bitmap("../../../Images/stars.png");
                 decimal rating = (decimal)_context.Ratings.Where(o => o.TitleId == TitleId).Select(t => t.AverageRating).FirstOrDefault();
                 Bitmap croppedStars = stars.Clone(new Rectangle(0, 0, (Decimal.ToInt32((stars.Width/10)*rating)), stars.Height), stars.PixelFormat);
                 return ConvertBitmap(croppedStars);
