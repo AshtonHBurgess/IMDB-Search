@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Source\\Repos\\Redman-dev\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj": {}
+    "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Source\\Repos\\Redman-dev\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj": {
+    "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Source\\Repos\\Redman-dev\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
+        "projectUniqueName": "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
         "projectName": "IMDBSearch",
-        "projectPath": "C:\\Users\\Student\\Source\\Repos\\Redman-dev\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
-        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Source\\Repos\\Redman-dev\\IMDB-Search\\IMDBSearch\\IMDBSearch\\obj\\",
+        "projectPath": "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\IMDBSearch.csproj",
+        "packagesPath": "C:\\Users\\nilan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nilan\\source\\repos\\NilanEkanayake\\IMDB-Search\\IMDBSearch\\IMDBSearch\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nilan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,6 +59,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -80,7 +84,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -33,29 +33,22 @@ namespace IMDBSearch.Pages
         {
             InitializeComponent();
             ratingsViewSource = (CollectionViewSource)FindResource(nameof(ratingsViewSource));
-            _context.Titles.Load();
-            ratingsListView.DataContext = _context;
-            Search();
         }
-        
-         private void Search()
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            string searchTerm = textsearch.Text;
-            _context.Titles.Load();
+            string searchTerm = textSearch.Text;
+            _context.Titles.Where(x => x.PrimaryTitle.Contains(searchTerm)).Take(500).Load(); //only taek top 500 to avoid hogging ram
             ratingsListView.DataContext = _context;
             //ratingsViewSource.Source = _context.Titles.Local.ToObservableCollection();
             var query =
                 from title in _context.Titles
-                where title != null && title.Rating != null && title.PrimaryTitle != null && title.Rating.AverageRating != null && title.PrimaryTitle.Contains(searchTerm)
-                orderby title.Rating.AverageRating descending
+                where title != null && title.Rating != null && title.PrimaryTitle != null && title.PrimaryTitle.Contains(searchTerm)
+                orderby title.Rating.AverageRating descending //sort by highest ratings
                 select title;
-            //query = query.Contains(searchTerm);
-            ratingsViewSource.Source = query.Take(500).ToList();
+
+            ratingsViewSource.Source = query.ToList().Take(500); //just in case take the top 500 again
             ratingsListView.Items.Refresh();
-        }
-        private void SearchButton_Click(object sender, RoutedEventArgs e)
-        {
-            Search();
 
         }
     }

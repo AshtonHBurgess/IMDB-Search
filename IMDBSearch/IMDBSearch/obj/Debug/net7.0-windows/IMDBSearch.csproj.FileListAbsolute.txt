@@ -217,3 +217,7 @@ C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\D
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\EpisodesPage.baml
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\ActorsPage.g.cs
 C:\Users\Student\Source\Repos\Redman-dev\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\ActorsPage.baml
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\DirectorsPage.g.cs
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\EpisodesPage.g.cs
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\DirectorsPage.baml
+C:\Users\nilan\source\repos\NilanEkanayake\IMDB-Search\IMDBSearch\IMDBSearch\obj\Debug\net7.0-windows\Pages\EpisodesPage.baml

@@ -40,7 +40,7 @@ namespace IMDBSearch
             mainFrame.NavigationService.Navigate(homePage);
         }
 
-        private void ActorButton_Click(object sender, RoutedEventArgs e)
+        private void EpisodeButton_Click(object sender, RoutedEventArgs e)
         {
             mainFrame.NavigationService.Navigate(episodepage);
         }
